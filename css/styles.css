@@ -3,6 +3,8 @@
   --ink: #1F1B03;
   --pink: #FC3C71;
   --orange: #FB481D;
+  --button-blue: #607493;
+  --button-blue-hover: #526787;
   --soft-pink: #FFE5EC;
   --paper: #FFFDF8;
   --white: #FFFFFF;
@@ -188,10 +190,10 @@ h3 { font-size: 1.15rem; }
   align-items: center;
   justify-content: center;
   padding: .65rem 1rem;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--button-blue);
   border-radius: .25rem;
-  background: var(--white);
-  color: var(--ink);
+  background: var(--button-blue);
+  color: var(--white);
   font-family: var(--sans);
   font-size: .95rem;
   font-weight: 700;
@@ -200,12 +202,11 @@ h3 { font-size: 1.15rem; }
   text-decoration: none;
 }
 
-.button:hover { background: var(--ink); color: var(--white); }
+.button:hover { border-color: var(--button-blue-hover); background: var(--button-blue-hover); color: var(--white); }
 .button--small { min-height: 2.5rem; padding: .5rem .75rem; font-size: .86rem; }
 
 .subscribe-section { display: grid; gap: 1.5rem; align-items: start; }
 .subscribe-copy > p:not(.eyebrow) { max-width: 40rem; }
-.subscribe-copy .button { margin-top: .5rem; }
 .subscribe-link-card { display: grid; gap: .5rem; align-content: center; padding: 1.25rem; border: 1px solid var(--line); border-radius: .35rem; background: var(--white); }
 .subscribe-link-card p { margin: 0 0 .4rem; }
 .media-grid { display: grid; gap: 1.25rem; }
