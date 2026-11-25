@@ -7,4 +7,4 @@
 | `daverley_bookstore_photo.jpeg` | Events | TBD | TBD | TBD |
 | `daverley_bookstore_photo2.jpeg` | Events | TBD | TBD | TBD |
 | `daverley_bookstore_photo3.jpeg` | Events | TBD | TBD | TBD |
-| `claire_daverley_author_photo.webp` | TBD — no alt text in `_content-notes.md`, so not used | TBD | TBD | TBD |
+| `claire_daverley_author_photo.webp` | About | TBD | TBD | TBD |
