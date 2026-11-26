@@ -215,8 +215,8 @@ h3 { font-size: 1.15rem; }
 
 .page-intro { padding-block: 2rem 1rem; }
 .page-intro p { max-width: 48rem; }
-.about-page-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(8rem, .45fr); align-items: center; gap: 1rem; }
-.author-photo { width: 100%; max-height: 15rem; border-radius: .35rem; object-fit: cover; }
+.about-page-intro { display: grid; justify-items: center; gap: .75rem; text-align: center; }
+.author-photo { width: min(100%, 32rem); height: auto; border-radius: .35rem; }
 .book-page { display: grid; gap: 1.5rem; padding-block: 1.5rem 3rem; }
 .book-cover { width: min(100%, 22rem); margin-inline: auto; }
 .book-cover img { width: 100%; max-height: 34rem; object-fit: contain; object-position: center top; }
@@ -238,15 +238,15 @@ h3 { font-size: 1.15rem; }
 .event-list--full .event-card { grid-template-columns: 4.5rem 1fr; }
 .event-photo-list { display: grid; gap: 1rem; align-content: start; }
 .event-photo-list img { width: 100%; max-height: 32rem; border-radius: .35rem; object-fit: cover; }
-.about-layout { display: grid; gap: 1.5rem; padding-block: 1.5rem 3rem; }
+.about-layout { padding-block: 0 3rem; }
+.instagram-banner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.75rem; padding: 1.1rem 1.25rem; border-radius: .35rem; background: var(--orange); color: var(--white); }
+.instagram-banner h2 { margin: 0; color: var(--white); font-size: 1.4rem; }
+.about-copy { max-width: 62rem; margin-inline: auto; }
 .about-copy p { margin-top: 0; }
 .about-copy h1, .about-copy h2 { margin-block: 1.25rem .65rem; }
 .accolades { padding: 1rem; border-radius: .35rem; background: var(--soft-pink); color: var(--ink); }
 .accolades ul { margin-bottom: 0; padding-left: 1.2rem; }
 .about-social { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1rem; }
-.instagram-card { padding: 1rem; border-radius: .35rem; background: var(--orange); color: var(--white); }
-.instagram-card h2 { margin-bottom: .5rem; color: var(--white); font-size: 1.4rem; }
-.instagram-card p { color: var(--white); font-size: 1.2rem; font-weight: 700; }
 .contact-list { margin: 1.5rem 0; padding: 0; list-style: none; }
 .contact-list li { padding: 1rem 0; border-bottom: 1px solid var(--line); }
 .contact-list h2 { margin-bottom: .35rem; font-size: 1.2rem; }
@@ -270,7 +270,6 @@ h3 { font-size: 1.15rem; }
   .book-cover { position: sticky; top: 1rem; }
   .events-layout { grid-template-columns: minmax(0, 1.3fr) minmax(14rem, .7fr); }
   .event-photo-list { grid-template-columns: 1fr; }
-  .about-layout { grid-template-columns: minmax(0, 1fr) minmax(14rem, .55fr); align-items: start; }
 }
 
 @media (min-width: 62rem) {
@@ -291,7 +290,6 @@ h3 { font-size: 1.15rem; }
   .event-list--home .event-card .button { grid-column: 1 / -1; }
   .event-photo-list { grid-template-columns: 1fr 1fr; }
   .event-photo-list img:first-child { grid-row: span 2; height: 100%; max-height: none; }
-  .about-layout { grid-template-columns: minmax(0, 1fr) 18rem; gap: 3rem; }
   .footer-inner { grid-template-columns: auto 1fr auto; align-items: center; }
   .footer-nav { justify-content: center; }
 }
